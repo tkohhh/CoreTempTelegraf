@@ -4,6 +4,7 @@ This program outputs data collected by CoreTemp (https://www.alcpu.com/CoreTemp/
 
 
 ##Prerequisites
+
 In order for the program to run as expected, the following is required:
   
 *CoreTemp installed and running
