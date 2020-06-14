@@ -1,5 +1,4 @@
-# CoreTempTelegraf
-CoreTemp Windows Telegraf Plugin
+#CoreTemp Windows Telegraf Plugin
 
 This program outputs data collected by CoreTemp (https://www.alcpu.com/CoreTemp/) in a format that can be consumed by Telegraf (https://www.influxdata.com/time-series-platform/telegraf/). The program is written in Delphi, and utilizes a library developed by Michal Kokorceny from http://74.cz/.
 
@@ -12,6 +11,7 @@ In order for the program to run as expected, the following is required:
 In order for Telegraf to consume the data output by the program, the following is also required:
 
 *Telegraf installed and running (I used this guide: https://www.influxdata.com/blog/using-telegraf-on-windows/)
+
 *Enable global shared memory on CoreTemp (Options > Settings, Advanced tab)
 
 
