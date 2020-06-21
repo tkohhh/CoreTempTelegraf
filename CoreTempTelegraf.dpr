@@ -58,7 +58,7 @@ begin
     if fnGetCoreTempInfo(Data) then
     begin
       Writeln('coretemp_cpu,host=' + Hostname
-            + ',cpu=' + StringReplace(Trim(Data.sCPUName),' ','_',[rfReplaceAll])
+            + ',cpu=' + StringReplace(Trim(String(Data.sCPUName)),' ','_',[rfReplaceAll])
             + ' cpu_speed=' + FloatToStrF(Data.fCPUSpeed, ffFixed, 7, 0, fs)
             + ',fsb_speed=' + FloatToStrF(Data.fFSBSpeed, ffFixed, 7, 0, fs)
             + ',multiplier=' + FloatToStrF(Data.fMultipier, ffFixed, 7, 1, fs)
@@ -77,7 +77,7 @@ begin
           else
             Temp := Data.fTemp[Index];
           Writeln('coretemp_cpu,host=' + Hostname
-                + ',cpu=' + StringReplace(Trim(Data.sCPUName),' ','_',[rfReplaceAll])
+                + ',cpu=' + StringReplace(Trim(String(Data.sCPUName)),' ','_',[rfReplaceAll])
                 + ',cpu_id=' + IntToStr(CPU)
                 + ',core_id=' + IntToStr(Core)
                 + ',unit=' + Degree
