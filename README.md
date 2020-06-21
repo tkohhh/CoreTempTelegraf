@@ -15,6 +15,8 @@ In order for Telegraf to consume the data output by the program, the following i
 
 ## Usage
 
+*Note: If you just want the executable and don't want to deal with the source code, it is available for download at* http://www.tomk.xyz/k/coretemptelegraf 
+
 You can check the output of the program in a command prompt or PowerShell. CD to the directory where the program resides, and then enter the command: CoreTempTelegraf
 
 To collect the data in Telegraf, add an entry to your Telegraf config like this:
