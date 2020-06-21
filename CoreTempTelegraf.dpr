@@ -14,8 +14,6 @@
 //Telegraf home page:
 //https://www.influxdata.com/time-series-platform/telegraf/
 
-//test comment
-
 program CoreTempTelegraf;
 
 {$APPTYPE CONSOLE}
