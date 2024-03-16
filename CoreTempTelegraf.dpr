@@ -57,7 +57,7 @@ begin
 
     if fnGetCoreTempInfo(Data) then
     begin
-      Writeln('coretemp_cpu,host=' + Hostname
+      Writeln('coretemp_cpu'
             + ',cpu=' + StringReplace(Trim(String(Data.sCPUName)),' ','_',[rfReplaceAll])
             + ' cpu_speed=' + FloatToStrF(Data.fCPUSpeed, ffFixed, 7, 0, fs)
             + ',fsb_speed=' + FloatToStrF(Data.fFSBSpeed, ffFixed, 7, 0, fs)
@@ -76,7 +76,7 @@ begin
             Temp := Data.uiTjMax[CPU] - Data.fTemp[Index]
           else
             Temp := Data.fTemp[Index];
-          Writeln('coretemp_cpu,host=' + Hostname
+          Writeln('coretemp_cpu'
                 + ',cpu=' + StringReplace(Trim(String(Data.sCPUName)),' ','_',[rfReplaceAll])
                 + ',cpu_id=' + IntToStr(CPU)
                 + ',core_id=' + IntToStr(Core)
